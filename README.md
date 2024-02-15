@@ -2,12 +2,14 @@
 
 TLDR;
 
-Source data is taken from [here](https://drive.google.com/drive/folders/15nquDatlYQIM8rQMTyVwhG-PoUreE7Qr) of https://data-pemilu.vercel.app/.
+Source data is taken from [this xlsx file](https://drive.google.com/drive/folders/15nquDatlYQIM8rQMTyVwhG-PoUreE7Qr) provided by https://data-pemilu.vercel.app/.
+
+As of 15-Feb-2024 15:49 WIB, the parquet file size is 85MB. It is desirable to provide diff for subsequent update cycle. 
 
 Parquet file was generated more or less like so:
 
 ```
-# --- convert xls file to csv
+# --- convert the xlsx file to csv
 ...
 
 # --- import to duckdb:
@@ -63,4 +65,11 @@ copy t1 from 'ppwp_tps.csv' with (header true, delimiter '\t', auto_detect false
 
 copy t1 to 'ppwp_tps.parquet' (format parquet);
 ```
+
+Suggestions are welcome.
+
+
+---
+
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Pemilu 2024 Parquet File</span> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/reedho">Ridho</a> is marked with <a href="http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0 Universal<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1"></a></p>
 
