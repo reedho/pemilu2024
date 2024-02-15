@@ -4,9 +4,20 @@ TLDR;
 
 Source data is taken from [this xlsx file](https://drive.google.com/drive/folders/15nquDatlYQIM8rQMTyVwhG-PoUreE7Qr) provided by https://data-pemilu.vercel.app/.
 
-As of 15-Feb-2024 15:49 WIB, the parquet file size is 85MB. It is desirable to provide diff for subsequent update cycle. 
+As of 15-Feb-2024 15:49 WIB, the exported parquet file size is 85MB. It is desirable to provide diff for subsequent update cycle.
 
-Parquet file was generated using [duckdb](https://duckdb.org/) more or less like so:
+All of the generated (manually, for now) files are below:
+
+| File Name | Created At | Info |
+|---|---|---|
+| ./ppwp_tps.csv.bz | 12:55 PM Feb 15 | Initial scrapping result, taken from the xlsx above |
+| ./ppwp_tps.parquet | 05:28 PM Feb 15 | Initial csv -> parquet |
+| ./ppwp_tps__001.parquet | 10:54 PM Feb 15 | Update 1: updated_at > 2024-02-14 20:24:41.538 |
+
+
+## NOTES
+
+Parquet files was generated using [duckdb](https://duckdb.org/), more or less like so:
 
 ```sql
 --- convert the xlsx file to csv
