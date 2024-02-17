@@ -8,11 +8,12 @@ As of 15-Feb-2024 15:49 WIB, the exported parquet file size is 85MB. It is desir
 
 All of the generated (manually, for now) files are below:
 
-| File Name | Created At | Info |
-|---|---|---|
-| ./ppwp_tps.csv.bz | 12:55 PM Feb 15 | Initial scrapping result, taken from the xlsx above |
-| ./ppwp_tps.parquet | 05:28 PM Feb 15 | Initial csv -> parquet |
-| ./ppwp_tps__001.parquet | 10:54 PM Feb 15 | Update 1: updated_at > 2024-02-14 20:24:41.538 |
+| File Name | Size | Created At | Info |
+|---|---|---|---|
+| ./ppwp_tps.csv.bz | 41M | 12:55 PM Feb 15 | Initial scrapping result, taken from the xlsx above |
+| ./ppwp_tps.parquet | 85M |  05:28 PM Feb 15 | Initial csv -> parquet |
+| ./ppwp_tps__001.parquet | 17M | 10:54 PM Feb 15 | Update 1: updated_at > 2024-02-14 20:24:41.538 |
+| ./ppwp_tps__002.parquet | 2.9M | 09:49 AM Feb 16 | Update 2: updated_at > 2024-02-15 14:39:15.109 |
 
 
 ## NOTES
