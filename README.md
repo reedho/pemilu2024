@@ -15,6 +15,10 @@ All of the generated (manually, for now) files are below:
 | ./ppwp_tps__001.parquet | 17M | 10:54 PM Feb 15 | Update 1: updated_at > 2024-02-14 20:24:41.538 |
 | ./ppwp_tps__002.parquet | 2.9M | 09:49 AM Feb 16 | Update 2: updated_at > 2024-02-15 14:39:15.109 |
 
+---
+
+Data from new upstream servers for now logged in [here](./NOTES.md).
+
 
 ## NOTES
 
